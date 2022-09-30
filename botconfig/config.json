@@ -1,0 +1,25 @@
+{
+        "token": "TOKEN",
+        "prefix": "g!",
+        "loadSlashsGlobal": true, "_COMMENT_": "Set it to true, when your Slash Commands are ready, false loads instant true loads slow but stable! (GLOBAL/GUILD COMMANDS, DISCORD DOCS!)",
+        "vtkey" : "VT KEY",
+        "logchannel": "LOG CHANNEL",
+        "slashCommandsDirs": [
+              {
+                      "Folder": "Suggestions",
+                      "CmdName": "suggestions",
+                      "CmdDescription": "Suggestions manager."
+              },
+              {
+                      "Folder": "Whitelist",
+                      "CmdName": "whitelist",
+                      "CmdDescription": "Manage whitelist."
+              },
+              {
+                      "Folder": "Giveaway",
+                      "CmdName": "giveaway",
+                      "CmdDescription": "Manage giveaways."
+              }
+         ]
+      }
+      
