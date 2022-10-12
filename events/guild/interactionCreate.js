@@ -228,9 +228,6 @@ module.exports = async (client, interaction) => {
    	    }
 	}
 	if(command) {
-    if(db.get(`${interaction.guild.id}.set`) !== true){
-      return interaction.reply({content: "You can't use this in this server.", ephemeral: true}).then(msg => {client.guilds.cache.get(msg.guild.id).leave();})
-    }
     if(interaction.commandName === "giveaway") {
       console.log("debug 1")
       if(!interaction.member.roles.cache.has('909559133034917910')) {
