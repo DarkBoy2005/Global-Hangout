@@ -62,9 +62,6 @@ module.exports = async (client, message) => {
     let command = client.commands.get(cmd);
     if(!command) command = client.commands.get(client.aliases.get(cmd));
     if (command) {
-      if(db.get(`${message.guild.id}.set`) !== true){
-        return message.channel.send({content: "You can't use this in this server."}).then(msg => {client.guilds.cache.get(msg.guild.id).leave();})
-      }
       console.log(`${message} was used in ${message.guild.name}`)
         //Check if user is on cooldown with the cmd, with Tomato#6966's Function from /handlers/functions.js
         if (onCoolDown(message, command)) {
